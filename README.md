@@ -33,10 +33,10 @@ Also on the settings page, you can add the machine name to a custom text list fi
 
 For example, if you want UPS you would do:  
 
-**product field**
+*product field*  
 UPS|United Parcel Service
 
-**quickship settings**  
+*quickship settings*  
 UPS|https://wwwapps.ups.com/WebTracking/processRequest?&tracknum=@tracking_number
 
 Notice how **UPS** match for the key
