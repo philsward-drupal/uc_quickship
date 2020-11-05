@@ -26,4 +26,35 @@ Settings: /admin/store/settings/orders/quickship
 
 ## USAGE
 
-The Settings page allows you to add a key|value list of carrier tracking URL's
+**Settings**  
+The Settings page allows you to add a key|value list of carrier tracking URL's. see [carrier_list.md](https://github.com/philsward/uc_quickship/blob/main/carrier_list.md) for examples
+
+Also on the settings page, you can add the machine name to a custom text list field that can be used for adding a radio button style field to the product where you set the name of the carrier that corresponds with the **key**|value. This allows you to specify the default carrier for a particular product in QuickShip.
+
+For example, if you want UPS you would do:  
+
+**product field**
+UPS|United Parcel Service
+
+**quickship settings**  
+UPS|https://wwwapps.ups.com/WebTracking/processRequest?&tracknum=@tracking_number
+
+Notice how **UPS** match for the key
+
+**Workflow**  
+To use QuickShip, simply navigate to an order and click the **QuickShip** tab.
+
+Products are first grouped by Product Pickup Address, then grouped by the carrier "if" set in the settings with each different carrier creating a new "shipment".
+
+**Ship Date** and **Delivery Date** are not required. They can be exposed as tokens though for email templates and they are purely there for additional information to the customer to help reduce potential phone calls. This info is usually avaialble through the carrier at the time of tracking generation.
+
+**Tracking Number** is pretty self explanatory. Paste the tracking number and save the form.
+
+**Saving**  
+The form will let you save, without being fully filled out. Simply click the [Create shipments] button when ready.  
+Let's say you have two products with two tracking numbers, but only one number is availble. Add it to the respective shipment and click [Create shipments], then come back later and add the next one.
+
+Completion of a package is determined by the color of the shipment group.  
+* Red = No shipments have tracking numbers
+* Yellow = Shipment does not have a tracking number
+* Green = Shipment has a tracking number
