@@ -1,6 +1,6 @@
 # Parcel and Trucking Carrier List
 
-UPS|https://wwwapps.ups.com/WebTracking/processRequest?&tracknum=@tracking_number
+UPS|https://wwwapps.ups.com/WebTracking/processRequest?&tracknum=@tracking_number \r
 FedEx|https://www.fedex.com/Tracking?tracknumbers=@tracking_number
 USPS|https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=@tracking_number
 Estes Express|https://www.estes-express.com/cgi-dta/edn419.mbr/output?search_criteria=@tracking_number
