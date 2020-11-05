@@ -2,7 +2,7 @@
 
 UPS|https://wwwapps.ups.com/WebTracking/processRequest?&tracknum=@tracking_number  
 FedEx|https://www.fedex.com/Tracking?tracknumbers=@tracking_number  
-USPS|https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=@tracking_number
+USPS|https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=@tracking_number  
 Estes Express|https://www.estes-express.com/cgi-dta/edn419.mbr/output?search_criteria=@tracking_number
 AAA Cooper|http://www.aaacooper.com/Transit/ProTrackResults.aspx?ProNum=@tracking_number
 ABF Freight|https://arcb.com/tools/tracking.html#/@tracking_number
