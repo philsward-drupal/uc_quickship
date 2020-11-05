@@ -46,7 +46,7 @@ To use QuickShip, simply navigate to an order and click the **QuickShip** tab.
 
 Products are first grouped by Product Pickup Address, then grouped by the carrier "if" set in the settings with each different carrier creating a new "shipment".
 
-**Ship Date** and **Delivery Date** are not required. They can be exposed as tokens though for email templates and they are purely there for additional information to the customer to help reduce potential phone calls. This info is usually avaialble through the carrier at the time of tracking generation.
+**Ship Date** and **Delivery Date** are not required. They can be exposed as tokens though for email templates and they are purely there for additional information to the customer to help reduce potential phone calls. This info is usually available through the carrier at the time of tracking generation.
 
 **Tracking Number** is pretty self explanatory. Paste the tracking number and save the form.
 
